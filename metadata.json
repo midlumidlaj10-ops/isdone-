@@ -1,0 +1,8 @@
+{
+  "name": "isdone Business Solutions",
+  "description": "The foundation of your success. We help your business reach the next level with HR solutions, AI integrations, software development, digital marketing, and cyber security.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

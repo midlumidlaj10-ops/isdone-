@@ -1,0 +1,2618 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Page Metadata -->
+    <title>isdone Business Solutions | The foundation of your success</title>
+    <meta name="description" content="isdone Business Solutions is the foundation of your success. We help your business reach the next level with unified HR solutions, AI integrations, custom software, digital marketing, and cyber security." />
+    <meta name="keywords" content="isdone, business solutions, HR solutions, AI integrations, software development, digital marketing, cyber security, corporate solutions" />
+    <meta name="author" content="isdone Business Solutions" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="isdone Business Solutions | The foundation of your success" />
+    <meta property="og:description" content="We help your business reach the next level with enterprise HR, AI, custom software, digital growth, and cyber security." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/assets/aistudio/isdone-logo-recreated_bbe8a523.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="isdone Business Solutions" />
+    <meta name="twitter:description" content="The foundation of your success. Unified B2B solutions for modern enterprise growth." />
+
+    <!-- Google Fonts: Archivo (Bold Headings) and Source Sans 3 (Clean Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+    <style>
+      /* ==========================================================================
+         DESIGN SYSTEM & CSS VARIABLES
+         Theme: Strict Black & White with Grey for secondary text.
+         Agency Editorial Standard: Bold typography, clean whitespace, executive trust.
+         ========================================================================== */
+      :root {
+        --color-black: #000000;
+        --color-white: #ffffff;
+        --color-grey-50: #fafafa;
+        --color-grey-100: #f4f4f5;
+        --color-grey-200: #e4e4e7;
+        --color-grey-300: #d4d4d8;
+        --color-grey-400: #a1a1aa;
+        --color-grey-500: #71717a;
+        --color-grey-600: #52525b;
+        --color-grey-700: #3f3f46;
+        --color-grey-800: #27272a;
+        --color-grey-900: #18181b;
+        --color-grey-950: #09090b;
+
+        /* Semantic Variables (Light Theme Default) */
+        --bg-primary: #ffffff;
+        --bg-secondary: #f4f4f6;
+        --bg-card: #ffffff;
+        --text-primary: #000000;
+        --text-secondary: #52525b;
+        --text-muted: #71717a;
+        --border-color: #e4e4e7;
+        --border-strong: #000000;
+        --header-bg: rgba(255, 255, 255, 0.94);
+        --header-border: #e4e4e7;
+        --topbar-bg: #000000;
+        --topbar-text: #ffffff;
+        --logo-filter: none;
+        --focus-ring: #000000;
+      }
+
+      /* Dark Mode Support via prefers-color-scheme */
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg-primary: #000000;
+          --bg-secondary: #121214;
+          --bg-card: #18181b;
+          --text-primary: #ffffff;
+          --text-secondary: #a1a1aa;
+          --text-muted: #71717a;
+          --border-color: #27272a;
+          --border-strong: #ffffff;
+          --header-bg: rgba(0, 0, 0, 0.94);
+          --header-border: #27272a;
+          --topbar-bg: #121214;
+          --topbar-text: #d4d4d8;
+          --logo-filter: invert(1);
+          --focus-ring: #ffffff;
+        }
+      }
+
+      /* Manual Theme Overrides */
+      [data-theme="dark"] {
+        --bg-primary: #000000;
+        --bg-secondary: #121214;
+        --bg-card: #18181b;
+        --text-primary: #ffffff;
+        --text-secondary: #a1a1aa;
+        --text-muted: #71717a;
+        --border-color: #27272a;
+        --border-strong: #ffffff;
+        --header-bg: rgba(0, 0, 0, 0.94);
+        --header-border: #27272a;
+        --topbar-bg: #121214;
+        --topbar-text: #d4d4d8;
+        --logo-filter: invert(1);
+        --focus-ring: #ffffff;
+      }
+
+      [data-theme="light"] {
+        --bg-primary: #ffffff;
+        --bg-secondary: #f4f4f6;
+        --bg-card: #ffffff;
+        --text-primary: #000000;
+        --text-secondary: #52525b;
+        --text-muted: #71717a;
+        --border-color: #e4e4e7;
+        --border-strong: #000000;
+        --header-bg: rgba(255, 255, 255, 0.94);
+        --header-border: #e4e4e7;
+        --topbar-bg: #000000;
+        --topbar-text: #ffffff;
+        --logo-filter: none;
+        --focus-ring: #000000;
+      }
+
+      /* Reset & Global Base */
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      body {
+        font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        font-size: 1.125rem;
+        line-height: 1.6;
+        color: var(--text-primary);
+        background-color: var(--bg-primary);
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transition: background-color 0.25s ease, color 0.25s ease;
+      }
+
+      /* Keyboard Focus */
+      :focus-visible {
+        outline: 2px solid var(--focus-ring);
+        outline-offset: 4px;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing: -0.025em;
+        color: inherit;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        transition: opacity 0.2s ease, transform 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+      }
+
+      p {
+        color: var(--text-secondary);
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+
+      @media (min-width: 768px) {
+        .container {
+          padding-left: 2.5rem;
+          padding-right: 2.5rem;
+        }
+      }
+
+      @media (min-width: 1280px) {
+        .container {
+          padding-left: 3rem;
+          padding-right: 3rem;
+        }
+      }
+
+      /* ==========================================================================
+         TOP EXECUTIVE TRUST BAR
+         ========================================================================== */
+      .top-trust-bar {
+        background-color: var(--topbar-bg);
+        color: var(--topbar-text);
+        font-size: 0.8125rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 0.45rem 0;
+        font-family: 'Archivo', sans-serif;
+        letter-spacing: 0.04em;
+      }
+
+      .top-trust-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .top-trust-highlight {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: #a1a1aa;
+      }
+
+      .top-trust-highlight strong {
+        color: #ffffff;
+      }
+
+      .top-trust-contact {
+        display: flex;
+        align-items: center;
+        gap: 1.25rem;
+      }
+
+      .top-trust-link {
+        color: #d4d4d8;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+      }
+
+      .top-trust-link:hover {
+        color: #ffffff;
+        text-decoration: underline;
+      }
+
+      /* ==========================================================================
+         STICKY HEADER & NAVIGATION
+         ========================================================================== */
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        width: 100%;
+        background-color: var(--header-bg);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--header-border);
+        transition: background-color 0.25s ease, border-color 0.25s ease;
+      }
+
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 4.85rem;
+      }
+
+      .logo-link {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .brand-logo {
+        height: 46px;
+        width: auto;
+        max-width: 180px;
+        display: block;
+        filter: var(--logo-filter);
+        mix-blend-mode: multiply;
+        transition: filter 0.25s ease;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) .brand-logo {
+          filter: invert(1);
+          mix-blend-mode: screen;
+        }
+      }
+
+      [data-theme="dark"] .brand-logo {
+        filter: invert(1);
+        mix-blend-mode: screen;
+      }
+
+      /* Desktop Nav */
+      .nav-desktop {
+        display: none;
+        align-items: center;
+        gap: 2rem;
+      }
+
+      .nav-link {
+        font-family: 'Archivo', sans-serif;
+        font-weight: 700;
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--text-primary);
+        opacity: 0.8;
+        position: relative;
+        padding: 0.25rem 0;
+      }
+
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: currentColor;
+        transition: width 0.2s ease;
+      }
+
+      .nav-link:hover {
+        opacity: 1;
+      }
+
+      .nav-link:hover::after {
+        width: 100%;
+      }
+
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      @media (min-width: 640px) {
+        .header-actions {
+          gap: 1rem;
+        }
+      }
+
+      /* Phone Quick Badge */
+      .header-phone-badge {
+        display: none;
+        align-items: center;
+        gap: 0.4rem;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 700;
+        font-size: 0.8125rem;
+        color: var(--text-primary);
+        border: 1px solid var(--border-color);
+        padding: 0.55rem 0.9rem;
+      }
+
+      @media (min-width: 1080px) {
+        .header-phone-badge {
+          display: inline-flex;
+        }
+      }
+
+      .header-phone-badge:hover {
+        border-color: var(--text-primary);
+      }
+
+      /* Theme Toggle */
+      .theme-toggle-btn {
+        background: transparent;
+        border: 1px solid var(--border-color);
+        color: var(--text-primary);
+        cursor: pointer;
+        padding: 0.55rem 0.8rem;
+        font-size: 0.8125rem;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        transition: all 0.2s ease;
+      }
+
+      .theme-toggle-btn:hover {
+        border-color: var(--text-primary);
+      }
+
+      /* Buttons */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 800;
+        font-size: 0.9375rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        padding: 0.9rem 1.85rem;
+        cursor: pointer;
+        border: 1px solid transparent;
+        text-align: center;
+        transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        white-space: nowrap;
+      }
+
+      .btn-header {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.8125rem;
+        background-color: var(--text-primary);
+        color: var(--bg-primary);
+        border: 1px solid var(--text-primary);
+      }
+
+      .btn-header:hover {
+        background-color: transparent;
+        color: var(--text-primary);
+      }
+
+      .btn-white {
+        background-color: #ffffff;
+        color: #000000;
+        border-color: #ffffff;
+      }
+
+      .btn-white:hover {
+        background-color: transparent;
+        color: #ffffff;
+      }
+
+      .btn-outline {
+        background-color: transparent;
+        color: #ffffff;
+        border-color: rgba(255, 255, 255, 0.45);
+      }
+
+      .btn-outline:hover {
+        border-color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+      .btn-black {
+        background-color: #000000;
+        color: #ffffff;
+        border-color: #000000;
+      }
+
+      .btn-black:hover {
+        background-color: transparent;
+        color: #000000;
+      }
+
+      /* Mobile Menu Toggle */
+      .mobile-menu-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: 1px solid var(--border-color);
+        color: var(--text-primary);
+        width: 2.75rem;
+        height: 2.75rem;
+        cursor: pointer;
+      }
+
+      .mobile-drawer {
+        display: none;
+        position: fixed;
+        top: 4.85rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--bg-primary);
+        border-top: 1px solid var(--border-color);
+        padding: 2.5rem 1.5rem;
+        z-index: 99;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-y: auto;
+      }
+
+      .mobile-drawer.is-open {
+        display: flex;
+      }
+
+      .mobile-nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      .mobile-nav-link {
+        font-family: 'Archivo', sans-serif;
+        font-size: 1.625rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: var(--text-primary);
+      }
+
+      @media (min-width: 960px) {
+        .nav-desktop {
+          display: flex;
+        }
+        .mobile-menu-btn {
+          display: none;
+        }
+      }
+
+      /* ==========================================================================
+         SECTION 1: HERO (Black background, white text)
+         Now includes integrated Executive Domain Grid (No sliding marquee!)
+         ========================================================================== */
+      .hero-section {
+        background-color: #000000;
+        color: #ffffff;
+        padding-top: 5rem;
+        padding-bottom: 5.5rem;
+        position: relative;
+        overflow: hidden;
+        border-bottom: 1px solid #27272a;
+      }
+
+      @media (min-width: 768px) {
+        .hero-section {
+          padding-top: 7rem;
+          padding-bottom: 7rem;
+        }
+      }
+
+      .hero-tag {
+        font-family: 'Archivo', sans-serif;
+        font-size: 0.8125rem;
+        font-weight: 700;
+        letter-spacing: 0.22em;
+        text-transform: uppercase;
+        color: #a1a1aa;
+        margin-bottom: 1.5rem;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+
+      .hero-tag::before {
+        content: '';
+        width: 7px;
+        height: 7px;
+        background-color: #ffffff;
+        display: inline-block;
+      }
+
+      .hero-headline {
+        font-size: clamp(2.35rem, 6.8vw, 5.5rem);
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1.05;
+        letter-spacing: -0.035em;
+        margin-bottom: 2rem;
+        max-width: 1120px;
+      }
+
+      /* Outlined rotating text cycle */
+      .rotating-word-container {
+        display: inline-block;
+        vertical-align: bottom;
+        height: 1.15em;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .rotating-words-track {
+        display: flex;
+        flex-direction: column;
+        animation: rotateWordsCycle 10s cubic-bezier(0.76, 0, 0.24, 1) infinite;
+      }
+
+      .rotating-word-item {
+        height: 1.15em;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 900;
+        color: transparent;
+        -webkit-text-stroke: 1.8px #ffffff;
+        letter-spacing: -0.02em;
+      }
+
+      @media (min-width: 768px) {
+        .rotating-word-item {
+          -webkit-text-stroke: 2.2px #ffffff;
+        }
+      }
+
+      @keyframes rotateWordsCycle {
+        0%, 14% {
+          transform: translateY(0%);
+        }
+        17%, 31% {
+          transform: translateY(-16.666%);
+        }
+        34%, 48% {
+          transform: translateY(-33.333%);
+        }
+        51%, 65% {
+          transform: translateY(-50%);
+        }
+        68%, 82% {
+          transform: translateY(-66.666%);
+        }
+        85%, 99.9% {
+          transform: translateY(-83.333%);
+        }
+        100% {
+          transform: translateY(0%);
+        }
+      }
+
+      .hero-subtext {
+        font-size: 1.25rem;
+        line-height: 1.6;
+        color: #a1a1aa;
+        max-width: 720px;
+        margin-bottom: 2.75rem;
+      }
+
+      @media (min-width: 768px) {
+        .hero-subtext {
+          font-size: 1.375rem;
+        }
+      }
+
+      .hero-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+        margin-bottom: 4.5rem;
+      }
+
+      /* Executive Credibility & Domain Pillars in Hero */
+      .hero-pillars-grid {
+        border-top: 1px solid #27272a;
+        padding-top: 3rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+      }
+
+      @media (min-width: 640px) {
+        .hero-pillars-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .hero-pillars-grid {
+          grid-template-columns: repeat(5, 1fr);
+          gap: 1.5rem;
+        }
+      }
+
+      .hero-pillar-card {
+        border-left: 2px solid #3f3f46;
+        padding-left: 1.25rem;
+        transition: border-left-color 0.2s ease;
+      }
+
+      .hero-pillar-card:hover {
+        border-left-color: #ffffff;
+      }
+
+      .hero-pillar-num {
+        font-family: 'Archivo', sans-serif;
+        font-size: 0.8125rem;
+        font-weight: 800;
+        color: #71717a;
+        margin-bottom: 0.25rem;
+        letter-spacing: 0.1em;
+      }
+
+      .hero-pillar-title {
+        font-family: 'Archivo', sans-serif;
+        font-size: 1rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 0.25rem;
+      }
+
+      .hero-pillar-desc {
+        font-size: 0.875rem;
+        color: #a1a1aa;
+        line-height: 1.45;
+      }
+
+      /* ==========================================================================
+         SECTION 2: ABOUT US ("The Foundation of Your Success")
+         Enterprise narrative on eliminating multi-vendor fragmentation
+         ========================================================================== */
+      .about-section {
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        border-bottom: 1px solid var(--border-color);
+        transition: background-color 0.25s ease;
+      }
+
+      @media (min-width: 768px) {
+        .about-section {
+          padding-top: 8rem;
+          padding-bottom: 8rem;
+        }
+      }
+
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+      }
+
+      @media (min-width: 960px) {
+        .about-grid {
+          grid-template-columns: 1fr 1.1fr;
+          gap: 5rem;
+          align-items: start;
+        }
+      }
+
+      .about-tag {
+        font-family: 'Archivo', sans-serif;
+        font-size: 0.8125rem;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        margin-bottom: 1rem;
+      }
+
+      .about-lead {
+        font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1.1;
+        letter-spacing: -0.03em;
+        margin-bottom: 1.75rem;
+      }
+
+      .about-body-text {
+        font-size: 1.125rem;
+        line-height: 1.7;
+        color: var(--text-secondary);
+        margin-bottom: 1.5rem;
+      }
+
+      .about-commitments-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .about-commitment-item {
+        border-top: 1px solid var(--border-color);
+        padding-top: 1.25rem;
+        display: flex;
+        gap: 1.25rem;
+      }
+
+      .about-check {
+        font-family: 'Archivo', sans-serif;
+        font-weight: 900;
+        font-size: 1.25rem;
+        color: var(--text-primary);
+        flex-shrink: 0;
+      }
+
+      .about-commitment-title {
+        font-family: 'Archivo', sans-serif;
+        font-size: 1.125rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 0.25rem;
+        color: var(--text-primary);
+      }
+
+      .about-commitment-text {
+        font-size: 0.9375rem;
+        color: var(--text-secondary);
+        line-height: 1.55;
+      }
+
+      /* Multi-Vendor Comparison Card */
+      .comparison-card {
+        background-color: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        padding: 2.5rem;
+      }
+
+      .comparison-header {
+        font-family: 'Archivo', sans-serif;
+        font-size: 0.875rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--text-muted);
+        margin-bottom: 1.5rem;
+      }
+
+      .comparison-comparison-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .comparison-column {
+        border-left: 2px solid var(--border-color);
+        padding-left: 1.25rem;
+      }
+
+      .comparison-column.highlight {
+        border-left-color: var(--text-primary);
+      }
+
+      .comparison-col-title {
+        font-family: 'Archivo', sans-serif;
+        font-size: 1.1875rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 0.75rem;
+        color: var(--text-primary);
+      }
+
+      .comparison-items {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        font-size: 0.9375rem;
+        color: var(--text-secondary);
+      }
+
+      /* ==========================================================================
+         SECTION 3: OUR SERVICES (Black background, white text)
+         5 large numbered rows with interactive scope trigger
+         ========================================================================== */
+      .services-section {
+        background-color: #000000;
+        color: #ffffff;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        border-bottom: 1px solid #27272a;
+      }
+
+      @media (min-width: 768px) {
+        .services-section {
+          padding-top: 8rem;
+          padding-bottom: 8rem;
+        }
+      }
+
+      .section-header {
+        margin-bottom: 4rem;
+      }
+
+      .section-title {
+        font-size: clamp(2.25rem, 5vw, 3.75rem);
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: -0.03em;
+        line-height: 1.05;
+        margin-bottom: 1rem;
+      }
+
+      .section-note {
+        font-size: 1.1875rem;
+        color: #a1a1aa;
+        max-width: 660px;
+        line-height: 1.6;
+      }
+
+      /* Service Row Layout */
+      .service-row {
+        border-top: 1px solid #27272a;
+        padding: 3rem 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        transition: background-color 0.2s ease, border-color 0.2s ease;
+      }
+
+      .service-row:last-child {
+        border-bottom: 1px solid #27272a;
+      }
+
+      .service-row:hover {
+        background-color: rgba(255, 255, 255, 0.02);
+      }
+
+      @media (min-width: 900px) {
+        .service-row {
+          grid-template-columns: 1.1fr 1fr;
+          gap: 3.5rem;
+          padding: 4rem 0;
+        }
+      }
+
+      .service-left {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+      }
+
+      .service-index {
+        font-family: 'Archivo', sans-serif;
+        font-size: 1.125rem;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        color: #71717a;
+      }
+
+      .service-title {
+        font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+      }
+
+      .service-desc {
+        font-size: 1.125rem;
+        line-height: 1.65;
+        color: #a1a1aa;
+        max-width: 520px;
+      }
+
+      .service-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+
+      .service-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 0;
+      }
+
+      .service-list-item {
+        font-size: 1.0625rem;
+        color: #d4d4d8;
+        display: flex;
+        align-items: baseline;
+        gap: 0.85rem;
+        line-height: 1.5;
+      }
+
+      .service-list-item::before {
+        content: '—';
+        font-weight: 600;
+        color: #71717a;
+        flex-shrink: 0;
+      }
+
+      .know-more-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 800;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: #ffffff;
+        width: fit-content;
+        margin-top: auto;
+        padding-bottom: 0.25rem;
+        border-bottom: 1px solid transparent;
+        transition: gap 0.2s ease, border-color 0.2s ease;
+      }
+
+      .know-more-link:hover {
+        gap: 0.9rem;
+        border-bottom-color: #ffffff;
+      }
+
+      .know-more-link .arrow {
+        transition: transform 0.2s ease;
+      }
+
+      .know-more-link:hover .arrow {
+        transform: translateX(4px);
+      }
+
+      /* ==========================================================================
+         SECTION 4: HOW WE WORK (White background)
+         Four columns with big light-grey numbers
+         ========================================================================== */
+      .work-section {
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        border-bottom: 1px solid var(--border-color);
+        transition: background-color 0.25s ease, color 0.25s ease;
+      }
+
+      @media (min-width: 768px) {
+        .work-section {
+          padding-top: 8rem;
+          padding-bottom: 8rem;
+        }
+      }
+
+      .steps-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      @media (min-width: 640px) {
+        .steps-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 3rem;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .steps-grid {
+          grid-template-columns: repeat(4, 1fr);
+          gap: 2.5rem;
+        }
+      }
+
+      .step-card {
+        display: flex;
+        flex-direction: column;
+        border-top: 2px solid var(--border-color);
+        padding-top: 2rem;
+        transition: border-color 0.2s ease;
+      }
+
+      .step-card:hover {
+        border-top-color: var(--text-primary);
+      }
+
+      .step-number {
+        font-family: 'Archivo', sans-serif;
+        font-size: clamp(3rem, 5vw, 4.25rem);
+        font-weight: 900;
+        line-height: 1;
+        color: var(--color-grey-300);
+        margin-bottom: 1.25rem;
+        letter-spacing: -0.04em;
+        transition: color 0.2s ease;
+      }
+
+      [data-theme="dark"] .step-number {
+        color: var(--color-grey-800);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) .step-number {
+          color: var(--color-grey-800);
+        }
+      }
+
+      .step-title {
+        font-size: 1.5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 0.75rem;
+        color: var(--text-primary);
+      }
+
+      .step-text {
+        font-size: 1.0625rem;
+        line-height: 1.6;
+        color: var(--text-secondary);
+      }
+
+      /* ==========================================================================
+         SECTION 5: WHY ISDONE (Light grey background)
+         Four points
+         ========================================================================== */
+      .why-section {
+        background-color: var(--bg-secondary);
+        color: var(--text-primary);
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        border-bottom: 1px solid var(--border-color);
+        transition: background-color 0.25s ease;
+      }
+
+      @media (min-width: 768px) {
+        .why-section {
+          padding-top: 8rem;
+          padding-bottom: 8rem;
+        }
+      }
+
+      .why-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+      }
+
+      @media (min-width: 640px) {
+        .why-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .why-grid {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      .why-card {
+        background-color: var(--bg-card);
+        border: 1px solid var(--border-color);
+        padding: 2.25rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: transform 0.2s ease, border-color 0.2s ease;
+      }
+
+      .why-card:hover {
+        transform: translateY(-4px);
+        border-color: var(--text-primary);
+      }
+
+      .why-card-icon {
+        width: 2.25rem;
+        height: 2.25rem;
+        margin-bottom: 1.5rem;
+        stroke: var(--text-primary);
+      }
+
+      .why-title {
+        font-size: 1.375rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 0.75rem;
+        color: var(--text-primary);
+      }
+
+      .why-desc {
+        font-size: 1.0625rem;
+        line-height: 1.6;
+        color: var(--text-secondary);
+      }
+
+      /* ==========================================================================
+         SECTION 6: STRATEGIC MARKETING FEATURE:
+         Interactive Business Foundation & Scope Estimator
+         ========================================================================== */
+      .estimator-section {
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      @media (min-width: 768px) {
+        .estimator-section {
+          padding-top: 8rem;
+          padding-bottom: 8rem;
+        }
+      }
+
+      .estimator-card {
+        background-color: var(--bg-secondary);
+        border: 1px solid var(--border-color);
+        padding: 2.5rem 1.5rem;
+      }
+
+      @media (min-width: 768px) {
+        .estimator-card {
+          padding: 3.5rem;
+        }
+      }
+
+      .estimator-layout {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      @media (min-width: 960px) {
+        .estimator-layout {
+          grid-template-columns: 1.2fr 0.8fr;
+          gap: 4rem;
+        }
+      }
+
+      .estimator-subtitle {
+        font-family: 'Archivo', sans-serif;
+        font-size: 0.875rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--text-muted);
+        margin-bottom: 1.25rem;
+      }
+
+      .estimator-options-group {
+        margin-bottom: 2rem;
+      }
+
+      .estimator-label {
+        font-family: 'Archivo', sans-serif;
+        font-size: 0.8125rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin-bottom: 0.75rem;
+        display: block;
+        color: var(--text-primary);
+      }
+
+      .stage-buttons {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.75rem;
+      }
+
+      .stage-btn {
+        background-color: var(--bg-card);
+        border: 1px solid var(--border-color);
+        color: var(--text-primary);
+        padding: 0.75rem;
+        font-family: 'Archivo', sans-serif;
+        font-weight: 700;
+        font-size: 0.8125rem;
+        cursor: pointer;
+        text-align: center;
+        text-transform: uppercase;
+        transition: all 0.2s ease;
+      }
+
+      .stage-btn.active {
+        background-color: var(--text-primary);
+        color: var(--bg-primary);
+        border-color: var(--text-primary);
+      }
+
+      .service-checkbox-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+      }
+
+      @media (min-width: 600px) {
+        .service-checkbox-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      .service-checkbox-label {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        background-color: var(--bg-card);
+        border: 1px solid var(--border-color);
+        padding: 0.85rem 1rem;
+        cursor: pointer;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        color: var(--text-primary);
+        transition: border-color 0.2s ease;
+      }
+
+      .service-checkbox-label:hover {
+        border-color: var(--text-primary);
+      }
+
+      .service-checkbox-label input {
+        width: 1.15rem;
+        height: 1.15rem;
+        accent-color: #000000;
+      }
+
+      /* Estimator Output Summary Panel */
+      .estimator-summary-panel {
+        background-color: var(--bg-card);
+        border: 1px solid var(--border-color);
+        padding: 2.25rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .summary-header {
+        font-family: 'Archivo', sans-serif;
+        font-size: 1.25rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+        color: var(--text-primary);
+      }
+
+      .summary-sub {
+        font-size: 0.9375rem;
+        color: var(--text-secondary);
+        margin-bottom: 1.75rem;
+      }
+
+      .summary-meta-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        border-top: 1px solid var(--border-color);
+        padding-top: 1.5rem;
+      }
+
+      .summary-meta-item {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.9375rem;
+      }
+
+      .summary-meta-label {
+        color: var(--text-muted);
+      }
+
+      .summary-meta-value {
+        font-family: 'Archivo', sans-serif;
+        font-weight: 700;
+        color: var(--text-primary);
+      }
+
+      /* ==========================================================================
+         SECTION 7: EXECUTIVE FAQ & DECISION GUIDE
+         ========================================================================== */
+      .faq-section {
+        background-color: var(--bg-secondary);
+        color: var(--text-primary);
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      @media (min-width: 768px) {
+        .faq-section {
+          padding-top: 8rem;
+          padding-bottom: 8rem;
+        }
+      }
+
+      .faq-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .faq-item {
+        background-color: var(--bg-card);
+        border: 1px solid var(--border-color);
+        padding: 1.75rem 2rem;
+        transition: border-color 0.2s ease;
+      }
+
+      .faq-item:hover {
+        border-color: var(--text-primary);
+      }
+
+      .faq-question {
+        font-size: 1.1875rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 0.75rem;
+        color: var(--text-primary);
+      }
+
+      .faq-answer {
+        font-size: 1rem;
+        line-height: 1.65;
+        color: var(--text-secondary);
+      }
+
+      /* ==========================================================================
+         SECTION 8: CONTACT / CALL TO ACTION (Black background, centered)
+         ========================================================================== */
+      .contact-section {
+        background-color: #000000;
+        color: #ffffff;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+        text-align: center;
+        border-bottom: 1px solid #27272a;
+      }
+
+      @media (min-width: 768px) {
+        .contact-section {
+          padding-top: 8rem;
+          padding-bottom: 8rem;
+        }
+      }
+
+      .contact-inner {
+        max-width: 820px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .contact-heading {
+        font-size: clamp(2.25rem, 5.5vw, 4.25rem);
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: -0.03em;
+        line-height: 1.05;
+        margin-bottom: 1.25rem;
+      }
+
+      .contact-line {
+        font-size: 1.25rem;
+        color: #a1a1aa;
+        line-height: 1.6;
+        margin-bottom: 2.75rem;
+      }
+
+      @media (min-width: 768px) {
+        .contact-line {
+          font-size: 1.375rem;
+        }
+      }
+
+      .contact-action-btn {
+        margin-bottom: 3.5rem;
+      }
+
+      .contact-links-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+        padding-top: 2rem;
+        border-top: 1px solid #27272a;
+      }
+
+      @media (min-width: 640px) {
+        .contact-links-box {
+          flex-direction: row;
+          justify-content: center;
+          gap: 3rem;
+        }
+      }
+
+      .contact-big-link {
+        font-family: 'Archivo', sans-serif;
+        font-size: clamp(1.25rem, 3vw, 1.875rem);
+        font-weight: 800;
+        color: #ffffff;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        padding-bottom: 0.25rem;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom-color 0.2s ease;
+      }
+
+      .contact-big-link:hover {
+        border-bottom-color: #ffffff;
+      }
+
+      .contact-big-link svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        flex-shrink: 0;
+      }
+
+      /* Quick contact form */
+      .contact-form-card {
+        margin-top: 3.5rem;
+        background-color: #09090b;
+        border: 1px solid #27272a;
+        padding: 2.25rem;
+        text-align: left;
+        max-width: 680px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .form-title {
+        font-size: 1.125rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin-bottom: 0.5rem;
+      }
+
+      .form-subtitle {
+        font-size: 0.9375rem;
+        color: #a1a1aa;
+        margin-bottom: 1.75rem;
+      }
+
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      @media (min-width: 600px) {
+        .form-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .form-full {
+        grid-column: 1 / -1;
+      }
+
+      .form-label {
+        display: block;
+        font-family: 'Archivo', sans-serif;
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #d4d4d8;
+        margin-bottom: 0.35rem;
+      }
+
+      .form-input, .form-select, .form-textarea {
+        width: 100%;
+        background-color: #18181b;
+        border: 1px solid #3f3f46;
+        color: #ffffff;
+        font-family: inherit;
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+        border-radius: 0;
+        outline: none;
+        transition: border-color 0.2s ease;
+      }
+
+      .form-input:focus, .form-select:focus, .form-textarea:focus {
+        border-color: #ffffff;
+      }
+
+      .form-textarea {
+        resize: vertical;
+        min-height: 100px;
+      }
+
+      .form-submit-row {
+        margin-top: 1.25rem;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      /* ==========================================================================
+         SECTION 9: FOOTER
+         Logo, quick links, contact details, copyright
+         ========================================================================== */
+      .site-footer {
+        background-color: #000000;
+        color: #ffffff;
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        border-top: 1px solid #27272a;
+      }
+
+      .footer-top {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+        padding-bottom: 4rem;
+        border-bottom: 1px solid #27272a;
+      }
+
+      @media (min-width: 768px) {
+        .footer-top {
+          grid-template-columns: 1.5fr 1fr 1fr;
+          gap: 3rem;
+        }
+      }
+
+      .footer-brand {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+      }
+
+      .footer-logo {
+        filter: invert(1);
+        mix-blend-mode: screen;
+        height: 48px;
+        width: auto;
+        max-width: 190px;
+        display: block;
+      }
+
+      .footer-tagline {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #ffffff;
+        line-height: 1.4;
+      }
+
+      .footer-subline {
+        font-size: 0.9375rem;
+        color: #a1a1aa;
+        max-width: 320px;
+        line-height: 1.5;
+      }
+
+      .footer-heading {
+        font-family: 'Archivo', sans-serif;
+        font-size: 0.8125rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: #71717a;
+        margin-bottom: 1.5rem;
+      }
+
+      .footer-links {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.875rem;
+        padding: 0;
+      }
+
+      .footer-link {
+        font-size: 1rem;
+        color: #a1a1aa;
+        transition: color 0.2s ease;
+      }
+
+      .footer-link:hover {
+        color: #ffffff;
+      }
+
+      .footer-contact-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+      }
+
+      .footer-contact-item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+
+      .contact-item-label {
+        font-family: 'Archivo', sans-serif;
+        font-size: 0.6875rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: #71717a;
+      }
+
+      .contact-item-value {
+        font-size: 1.0625rem;
+        font-weight: 600;
+        color: #ffffff;
+      }
+
+      .contact-item-value:hover {
+        text-decoration: underline;
+      }
+
+      .footer-bottom {
+        padding-top: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+      }
+
+      @media (min-width: 768px) {
+        .footer-bottom {
+          flex-direction: row;
+          justify-content: space-between;
+          text-align: left;
+        }
+      }
+
+      .copyright-text {
+        font-size: 0.875rem;
+        color: #71717a;
+      }
+
+      .footer-sublinks {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 0.875rem;
+        color: #71717a;
+      }
+
+      .footer-sublinks a:hover {
+        color: #ffffff;
+      }
+
+      /* Accessibility Reduced Motion */
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        .rotating-words-track {
+          animation: none !important;
+        }
+        .btn, .service-row, .why-card, .know-more-link {
+          transition: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" style="position: absolute; top: -100px; left: 1rem; z-index: 999; background: #000; color: #fff; padding: 0.5rem 1rem;" onfocus="this.style.top='1rem'" onblur="this.style.top='-100px'">Skip to main content</a>
+
+    <!-- ==========================================================================
+         TOP EXECUTIVE TRUST BAR
+         ========================================================================== -->
+    <div class="top-trust-bar">
+      <div class="container">
+        <div class="top-trust-inner">
+          <div class="top-trust-highlight">
+            <span>Direct Partner for HR, AI, Software, Marketing & Security</span>
+          </div>
+          <div class="top-trust-contact">
+            <a href="tel:9048525690" class="top-trust-link" aria-label="Direct Phone Line">
+              <span aria-hidden="true">📞</span> 9048525690
+            </a>
+            <a href="mailto:info@isdone.com" class="top-trust-link" aria-label="Direct Email">
+              <span aria-hidden="true">✉</span> info@isdone.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         STICKY HEADER & NAVIGATION
+         ========================================================================== -->
+    <header class="site-header" role="banner" id="top">
+      <div class="container">
+        <div class="header-inner">
+          <!-- Logo -->
+          <a href="#top" class="logo-link" aria-label="isdone Business Solutions - Home">
+            <img src="/assets/aistudio/isdone-logo-recreated_bbe8a523.svg" alt="isdone Business Solutions" class="brand-logo" width="160" height="59" onerror="this.onerror=null; this.src='logo.svg';" />
+          </a>
+
+          <!-- Desktop Navigation -->
+          <nav class="nav-desktop" aria-label="Main Navigation">
+            <a href="#about" class="nav-link">About Us</a>
+            <a href="#services" class="nav-link">Solutions</a>
+            <a href="#how-we-work" class="nav-link">How we work</a>
+            <a href="#why-isdone" class="nav-link">Why isdone</a>
+            <a href="#estimator" class="nav-link">Scope Estimator</a>
+            <a href="#faq" class="nav-link">FAQ</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
+
+          <!-- Header Actions -->
+          <div class="header-actions">
+            <!-- Direct Phone Click-to-Call -->
+            <a href="tel:9048525690" class="header-phone-badge" aria-label="Direct phone line 9048525690">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              9048525690
+            </a>
+
+            <!-- Theme Toggle Switcher -->
+            <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle theme mode" title="Switch Theme">
+              <span id="themeToggleIcon" aria-hidden="true">◐</span>
+              <span id="themeToggleLabel">Theme</span>
+            </button>
+
+            <!-- Get in touch button -->
+            <a href="#contact" class="btn btn-header">Get a Proposal</a>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button id="mobileNavToggle" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+      <nav class="mobile-nav-links" aria-label="Mobile Navigation">
+        <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">About Us</a>
+        <a href="#services" class="mobile-nav-link" onclick="closeMobileMenu()">Solutions</a>
+        <a href="#how-we-work" class="mobile-nav-link" onclick="closeMobileMenu()">How we work</a>
+        <a href="#why-isdone" class="mobile-nav-link" onclick="closeMobileMenu()">Why isdone</a>
+        <a href="#estimator" class="mobile-nav-link" onclick="closeMobileMenu()">Scope Estimator</a>
+        <a href="#faq" class="mobile-nav-link" onclick="closeMobileMenu()">FAQ</a>
+        <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
+      </nav>
+      <div style="border-top: 1px solid var(--border-color); padding-top: 1.5rem; margin-top: 2rem;">
+        <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.5rem;">Direct Contacts:</p>
+        <p><a href="tel:9048525690" style="font-weight: 700; font-size: 1.25rem;">📞 9048525690</a></p>
+        <p><a href="mailto:info@isdone.com" style="color: var(--text-secondary);">✉ info@isdone.com</a></p>
+      </div>
+    </div>
+
+    <!-- Main Landmark -->
+    <main id="main-content">
+      <!-- ==========================================================================
+           1. HERO (Black background, white text)
+           ========================================================================== -->
+      <section class="hero-section" id="hero" aria-labelledby="hero-heading">
+        <div class="container">
+          <div class="hero-tag">The Foundation of Your Success</div>
+          
+          <h1 id="hero-heading" class="hero-headline">
+            WE BUILD
+            <span class="rotating-word-container" aria-label="Rotating: HR Solutions, AI, Software, Marketing, Security">
+              <span class="rotating-words-track">
+                <!-- 1 -->
+                <span class="rotating-word-item">&nbsp;HR SOLUTIONS&nbsp;</span>
+                <!-- 2 -->
+                <span class="rotating-word-item">&nbsp;AI&nbsp;</span>
+                <!-- 3 -->
+                <span class="rotating-word-item">&nbsp;SOFTWARE&nbsp;</span>
+                <!-- 4 -->
+                <span class="rotating-word-item">&nbsp;MARKETING&nbsp;</span>
+                <!-- 5 -->
+                <span class="rotating-word-item">&nbsp;SECURITY&nbsp;</span>
+                <!-- Seamless cycle duplicate of 1 -->
+                <span class="rotating-word-item">&nbsp;HR SOLUTIONS&nbsp;</span>
+              </span>
+            </span>
+            <br />THAT DELIVERS EXCELLENCE
+          </h1>
+
+          <p class="hero-subtext">
+            isdone Business Solutions is the foundation of your success. We help your business reach the next level.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-white">Let's talk</a>
+            <a href="#services" class="btn btn-outline">Our services</a>
+          </div>
+
+          <!-- Integrated Executive Domain Grid (Replacing the sliding strip) -->
+          <div class="hero-pillars-grid" aria-label="Core Domain Capabilities">
+            <div class="hero-pillar-card">
+              <div class="hero-pillar-num">01 / PEOPLE</div>
+              <div class="hero-pillar-title">HR Solutions</div>
+              <div class="hero-pillar-desc">Talent, payroll & statutory compliance (PF, ESI, TDS)</div>
+            </div>
+
+            <div class="hero-pillar-card">
+              <div class="hero-pillar-num">02 / INTELLIGENCE</div>
+              <div class="hero-pillar-title">AI Integrations</div>
+              <div class="hero-pillar-desc">Custom automation & operational intelligence</div>
+            </div>
+
+            <div class="hero-pillar-card">
+              <div class="hero-pillar-num">03 / TECHNOLOGY</div>
+              <div class="hero-pillar-title">Software Dev</div>
+              <div class="hero-pillar-desc">Bespoke CRM, HRMS, billing & cloud platforms</div>
+            </div>
+
+            <div class="hero-pillar-card">
+              <div class="hero-pillar-num">04 / EXPANSION</div>
+              <div class="hero-pillar-title">Digital Marketing</div>
+              <div class="hero-pillar-desc">SEO, targeted Meta/Google ads & high-conversion web</div>
+            </div>
+
+            <div class="hero-pillar-card">
+              <div class="hero-pillar-num">05 / DEFENSE</div>
+              <div class="hero-pillar-title">Cyber Security</div>
+              <div class="hero-pillar-desc">System hardening, data armor & continuous protection</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           2. ABOUT US ("The Foundation of Your Success")
+           Executive value proposition solving multi-vendor operational drag
+           ========================================================================== -->
+      <section class="about-section" id="about" aria-labelledby="about-heading">
+        <div class="container">
+          <div class="about-grid">
+            <div>
+              <div class="about-tag">About isdone Business Solutions</div>
+              <h2 id="about-heading" class="about-lead">
+                Built to eliminate the multi-vendor trap for growing businesses.
+              </h2>
+              <p class="about-body-text">
+                Growing companies often waste up to 40% of their leadership bandwidth managing separate, disconnected vendors for human resources, payroll compliance, custom coding, advertising, and IT security.
+              </p>
+              <p class="about-body-text">
+                When systems are fragmented, execution suffers. At <strong>isdone Business Solutions</strong>, we provide a unified foundation: five mission-critical operational pillars managed by one unified, accountable partner.
+              </p>
+
+              <div class="about-commitments-list">
+                <div class="about-commitment-item">
+                  <div class="about-check">✦</div>
+                  <div>
+                    <h3 class="about-commitment-title">Single Source of Accountability</h3>
+                    <p class="about-commitment-text">No finger-pointing between your HR desk, software engineers, and marketing agency. One team delivers end-to-end.</p>
+                  </div>
+                </div>
+
+                <div class="about-commitment-item">
+                  <div class="about-check">✦</div>
+                  <div>
+                    <h3 class="about-commitment-title">Zero-Error Statutory Discipline</h3>
+                    <p class="about-commitment-text">Meticulous adherence to payroll laws, PF, ESI, TDS filings, and data governance standards so you operate with absolute confidence.</p>
+                  </div>
+                </div>
+
+                <div class="about-commitment-item">
+                  <div class="about-check">✦</div>
+                  <div>
+                    <h3 class="about-commitment-title">Custom-Engineered For Your Scale</h3>
+                    <p class="about-commitment-text">We do not sell generic packages. Every solution is architected around your specific business model and current growth phase.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Comparison Matrix -->
+            <div class="comparison-card">
+              <div class="comparison-header">Why Enterprise Leaders Choose isdone</div>
+              
+              <div class="comparison-comparison-grid">
+                <div class="comparison-column">
+                  <h4 class="comparison-col-title" style="color: var(--text-muted);">Traditional Vendor Fragmentation</h4>
+                  <ul class="comparison-items">
+                    <li>✕ 4-6 different vendor contracts & billing cycles</li>
+                    <li>✕ Software and marketing teams don't communicate</li>
+                    <li>✕ Frequent payroll errors & statutory filing delays</li>
+                    <li>✕ Disjointed security policies & data vulnerabilities</li>
+                    <li>✕ Slow response times with no single owner</li>
+                  </ul>
+                </div>
+
+                <div class="comparison-column highlight">
+                  <h4 class="comparison-col-title">The isdone Unified Model</h4>
+                  <ul class="comparison-items">
+                    <li>✓ <strong>One unified partner</strong> covering HR, IT, AI, ads & security</li>
+                    <li>✓ <strong>Synchronized execution:</strong> code, marketing & HR aligned</li>
+                    <li>✓ <strong>100% compliance:</strong> PF, ESI, LWF, TDS handled on time</li>
+                    <li>✓ <strong>Enterprise defense:</strong> cyber security built into every build</li>
+                    <li>✓ <strong>Direct dedicated access:</strong> phone 9048525690 & single email</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color); text-align: right;">
+                <a href="#services" class="btn btn-black" style="font-size: 0.8125rem; padding: 0.65rem 1.25rem;">
+                  Review All 5 Solutions →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           3. OUR SERVICES (Black background, white text)
+           5 large numbered rows
+           ========================================================================== -->
+      <section class="services-section" id="services" aria-labelledby="services-heading">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="services-heading" class="section-title">Our services</h2>
+            <p class="section-note">Choose one service or build your whole business foundation with us.</p>
+          </div>
+
+          <div class="services-list" role="list">
+            <!-- 01 HR solutions -->
+            <article class="service-row" role="listitem">
+              <div class="service-left">
+                <span class="service-index">01</span>
+                <h3 class="service-title">HR solutions</h3>
+                <p class="service-desc">Complete HR support for your business, from hiring the right people to running payroll without errors.</p>
+              </div>
+              <div class="service-right">
+                <ul class="service-list" aria-label="HR solutions capabilities">
+                  <li class="service-list-item">Talent acquisition</li>
+                  <li class="service-list-item">Performance management</li>
+                  <li class="service-list-item">System and policy development</li>
+                  <li class="service-list-item">Employee training and development</li>
+                  <li class="service-list-item">HR documentation</li>
+                  <li class="service-list-item">Payroll calculation: ESI, PF, LWF, TDS</li>
+                  <li class="service-list-item">Statutory registrations</li>
+                </ul>
+                <a href="#contact" class="know-more-link" onclick="prefillService('HR solutions')" aria-label="Know more about HR solutions">
+                  Know more <span class="arrow" aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- 02 AI integrations -->
+            <article class="service-row" role="listitem">
+              <div class="service-left">
+                <span class="service-index">02</span>
+                <h3 class="service-title">AI integrations</h3>
+                <p class="service-desc">We build AI integrations for your business requirements.</p>
+              </div>
+              <div class="service-right">
+                <p class="service-desc" style="font-size: 1rem; color: #71717a;">
+                  From workflow automation to custom intelligent business agents and predictive operations designed for modern enterprise agility.
+                </p>
+                <a href="#contact" class="know-more-link" onclick="prefillService('AI integrations')" aria-label="Know more about AI integrations">
+                  Know more <span class="arrow" aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- 03 Software development -->
+            <article class="service-row" role="listitem">
+              <div class="service-left">
+                <span class="service-index">03</span>
+                <h3 class="service-title">Software development</h3>
+                <p class="service-desc">Software built around your company's requirements. CRM, HRMS and billing are just a few examples of what we can provide.</p>
+              </div>
+              <div class="service-right">
+                <ul class="service-list" aria-label="Software development solutions">
+                  <li class="service-list-item">CRM</li>
+                  <li class="service-list-item">HRMS</li>
+                  <li class="service-list-item">Billing</li>
+                  <li class="service-list-item">Custom software</li>
+                </ul>
+                <a href="#contact" class="know-more-link" onclick="prefillService('Software development')" aria-label="Know more about Software development">
+                  Know more <span class="arrow" aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- 04 Digital marketing -->
+            <article class="service-row" role="listitem">
+              <div class="service-left">
+                <span class="service-index">04</span>
+                <h3 class="service-title">Digital marketing</h3>
+                <p class="service-desc">From your website to your ads, we help your business show up where your customers are looking.</p>
+              </div>
+              <div class="service-right">
+                <ul class="service-list" aria-label="Digital marketing capabilities">
+                  <li class="service-list-item">SEO</li>
+                  <li class="service-list-item">Social media marketing</li>
+                  <li class="service-list-item">Meta ads and Google ads</li>
+                  <li class="service-list-item">Website creation</li>
+                  <li class="service-list-item">Content creation</li>
+                </ul>
+                <a href="#contact" class="know-more-link" onclick="prefillService('Digital marketing')" aria-label="Know more about Digital marketing">
+                  Know more <span class="arrow" aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- 05 Cyber security -->
+            <article class="service-row" role="listitem">
+              <div class="service-left">
+                <span class="service-index">05</span>
+                <h3 class="service-title">Cyber security</h3>
+                <p class="service-desc">We support your business with cyber security services that protect your data, systems and customers.</p>
+              </div>
+              <div class="service-right">
+                <p class="service-desc" style="font-size: 1rem; color: #71717a;">
+                  Proactive defense, vulnerability assessment, cloud perimeter protection, and continuous system monitoring to safeguard your business assets.
+                </p>
+                <a href="#contact" class="know-more-link" onclick="prefillService('Cyber security')" aria-label="Know more about Cyber security">
+                  Know more <span class="arrow" aria-hidden="true">→</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+         4. HOW WE WORK (White background)
+         Four columns with big light-grey numbers
+         ========================================================================== -->
+      <section class="work-section" id="how-we-work" aria-labelledby="work-heading">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="work-heading" class="section-title">How we work</h2>
+            <p class="section-note">A simple process from your first call to final delivery.</p>
+          </div>
+
+          <div class="steps-grid">
+            <!-- 01 Understand -->
+            <div class="step-card">
+              <span class="step-number" aria-hidden="true">01</span>
+              <h3 class="step-title">Understand</h3>
+              <p class="step-text">We listen to your goals, challenges and requirements.</p>
+            </div>
+
+            <!-- 02 Plan -->
+            <div class="step-card">
+              <span class="step-number" aria-hidden="true">02</span>
+              <h3 class="step-title">Plan</h3>
+              <p class="step-text">We recommend the right solution and agree on the scope with you.</p>
+            </div>
+
+            <!-- 03 Deliver -->
+            <div class="step-card">
+              <span class="step-number" aria-hidden="true">03</span>
+              <h3 class="step-title">Deliver</h3>
+              <p class="step-text">We build, set up and launch, customized to your business.</p>
+            </div>
+
+            <!-- 04 Support -->
+            <div class="step-card">
+              <span class="step-number" aria-hidden="true">04</span>
+              <h3 class="step-title">Support</h3>
+              <p class="step-text">We stay with you as your business grows and your needs change.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+         5. WHY ISDONE (Light grey background)
+         Four points
+         ========================================================================== -->
+      <section class="why-section" id="why-isdone" aria-labelledby="why-heading">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="why-heading" class="section-title">Why isdone</h2>
+            <p class="section-note">Built for modern businesses demanding reliability, craftsmanship, and single-source accountability.</p>
+          </div>
+
+          <div class="why-grid">
+            <!-- Point 1 -->
+            <div class="why-card">
+              <svg class="why-card-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <h3 class="why-title">One partner</h3>
+              <p class="why-desc">HR, software, AI, marketing and security from a single team.</p>
+            </div>
+
+            <!-- Point 2 -->
+            <div class="why-card">
+              <svg class="why-card-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+              <h3 class="why-title">Built around you</h3>
+              <p class="why-desc">Every solution customized to your requirements.</p>
+            </div>
+
+            <!-- Point 3 -->
+            <div class="why-card">
+              <svg class="why-card-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+              <h3 class="why-title">Compliance ready</h3>
+              <p class="why-desc">Payroll, PF, ESI, LWF, TDS and statutory registrations handled correctly and on time.</p>
+            </div>
+
+            <!-- Point 4 -->
+            <div class="why-card">
+              <svg class="why-card-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="12" y1="20" x2="12" y2="10"></line>
+                <line x1="18" y1="20" x2="18" y2="4"></line>
+                <line x1="6" y1="20" x2="6" y2="16"></line>
+              </svg>
+              <h3 class="why-title">Made to grow</h3>
+              <p class="why-desc">Solutions that scale with your team and customers.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+         6. STRATEGIC MARKETING TOOL:
+         Interactive Business Solution & Scope Estimator
+         ========================================================================== -->
+      <section class="estimator-section" id="estimator" aria-labelledby="estimator-heading">
+        <div class="container">
+          <div class="section-header">
+            <h2 id="estimator-heading" class="section-title">Scope Estimator</h2>
+            <p class="section-note">Select your operational needs to outline your custom business foundation plan.</p>
+          </div>
+
+          <div class="estimator-card">
+            <div class="estimator-layout">
+              <!-- Controls -->
+              <div>
+                <div class="estimator-options-group">
+                  <span class="estimator-label">Step 1: Your Business Phase</span>
+                  <div class="stage-buttons">
+                    <button type="button" class="stage-btn active" onclick="setBusinessStage('Emerging Startup (1-15 Team)', this)">Startup</button>
+                    <button type="button" class="stage-btn" onclick="setBusinessStage('Scaling SME (15-100 Team)', this)">Scaling SME</button>
+                    <button type="button" class="stage-btn" onclick="setBusinessStage('Established Enterprise (100+ Team)', this)">Enterprise</button>
+                  </div>
+                </div>
+
+                <div class="estimator-options-group">
+                  <span class="estimator-label">Step 2: Required Domain Solutions</span>
+                  <div class="service-checkbox-grid">
+                    <label class="service-checkbox-label">
+                      <input type="checkbox" id="chkHR" checked onchange="updateEstimatorSummary()" />
+                      <span>HR & Payroll Compliance</span>
+                    </label>
+
+                    <label class="service-checkbox-label">
+                      <input type="checkbox" id="chkSoftware" checked onchange="updateEstimatorSummary()" />
+                      <span>Software (CRM, HRMS, Custom)</span>
+                    </label>
+
+                    <label class="service-checkbox-label">
+                      <input type="checkbox" id="chkAI" onchange="updateEstimatorSummary()" />
+                      <span>AI Integrations & Agents</span>
+                    </label>
+
+                    <label class="service-checkbox-label">
+                      <input type="checkbox" id="chkMarketing" checked onchange="updateEstimatorSummary()" />
+                      <span>Digital Marketing & Ads</span>
+                    </label>
+
+                    <label class="service-checkbox-label" style="grid-column: 1 / -1;">
+                      <input type="checkbox" id="chkSecurity" checked onchange="updateEstimatorSummary()" />
+                      <span>Cyber Security & Systems Defense</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Live Dynamic Scope Summary Panel -->
+              <div class="estimator-summary-panel">
+                <div>
+                  <h3 class="summary-header">Proposed Roadmap</h3>
+                  <p class="summary-sub" id="estimatorPhaseDesc">Configured for your team size and operational readiness.</p>
+
+                  <div class="summary-meta-list">
+                    <div class="summary-meta-item">
+                      <span class="summary-meta-label">Selected Pillars:</span>
+                      <span class="summary-meta-value" id="summarySelectedCount">4 Domains</span>
+                    </div>
+                    <div class="summary-meta-item">
+                      <span class="summary-meta-label">Partner Synergy:</span>
+                      <span class="summary-meta-value">Single Accountable Team</span>
+                    </div>
+                    <div class="summary-meta-item">
+                      <span class="summary-meta-label">Compliance Guarantee:</span>
+                      <span class="summary-meta-value">100% PF / ESI / TDS Ready</span>
+                    </div>
+                    <div class="summary-meta-item">
+                      <span class="summary-meta-label">Turnaround Kickoff:</span>
+                      <span class="summary-meta-value">Within 48 Hours</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <button type="button" onclick="transferEstimateToContact()" class="btn btn-black" style="width: 100%;">
+                    Request Detailed Proposal →
+                  </button>
+                  <p style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 0.75rem;">
+                    Prefills your inquiry with zero commitment required.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           7. EXECUTIVE FAQ & DECISION GUIDE
+           ========================================================================== -->
+      <section class="faq-section" id="faq" aria-labelledby="faq-heading">
+        <div class="container">
+          <div class="section-header" style="text-align: center;">
+            <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
+            <p class="section-note" style="margin-left: auto; margin-right: auto;">
+              Clear answers for business founders, directors, and operational heads.
+            </p>
+          </div>
+
+          <div class="faq-grid">
+            <div class="faq-item">
+              <h3 class="faq-question">Can we engage isdone for only one specific service?</h3>
+              <p class="faq-answer">
+                Yes. While our unified five-domain model provides the highest operational synergy, you can start with any single domain (e.g., only HR & payroll compliance, or only custom CRM development) and expand as your business demands.
+              </p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-question">How do you ensure payroll and statutory compliance without error?</h3>
+              <p class="faq-answer">
+                Our HR specialists maintain strict calculation frameworks for ESI, PF, LWF, and TDS, adhering to the latest statutory guidelines with comprehensive audit trails before filing so you never face penalties.
+              </p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-question">What is your approach to proprietary software & data security?</h3>
+              <p class="faq-answer">
+                All client source code, customer records, and operational data are protected under strict non-disclosure agreements (NDAs). We employ encrypted repositories, role-based access, and cyber security best practices across all builds.
+              </p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-question">How fast can an engagement begin?</h3>
+              <p class="faq-answer">
+                Once you reach out via our form or call 9048525690, we review your scope, schedule a discovery consultation within 24 hours, and deliver an actionable execution plan within 48 hours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================================================
+           8. CONTACT / CALL TO ACTION (Black background, centered)
+           ========================================================================== -->
+      <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+        <div class="container">
+          <div class="contact-inner">
+            <h2 id="contact-heading" class="contact-heading">Start building your foundation today</h2>
+            <p class="contact-line">Tell us what your business needs and we will suggest the right solution.</p>
+
+            <div class="contact-action-btn">
+              <a href="mailto:info@isdone.com?subject=Business%20Inquiry%20-%20isdone%20Business%20Solutions" class="btn btn-white" style="font-size: 1.125rem; padding: 1.125rem 2.5rem;">
+                Email us
+              </a>
+            </div>
+
+            <!-- Large direct clickable links for email and phone -->
+            <div class="contact-links-box">
+              <a href="mailto:info@isdone.com" class="contact-big-link" aria-label="Email info@isdone.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                info@isdone.com
+              </a>
+
+              <a href="tel:9048525690" class="contact-big-link" aria-label="Call 9048525690">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+                9048525690
+              </a>
+            </div>
+
+            <!-- Direct Consultation Message Form -->
+            <div class="contact-form-card">
+              <h3 class="form-title">Consult with our team</h3>
+              <p class="form-subtitle">Fill out your requirements below and an executive advisor will respond promptly.</p>
+              
+              <form id="inquiryForm" onsubmit="handleInquirySubmit(event)">
+                <div class="form-grid">
+                  <div>
+                    <label for="formName" class="form-label">Your Name</label>
+                    <input type="text" id="formName" name="name" class="form-input" placeholder="e.g. Alex Smith" required />
+                  </div>
+                  <div>
+                    <label for="formEmail" class="form-label">Business Email</label>
+                    <input type="email" id="formEmail" name="email" class="form-input" placeholder="name@company.com" required />
+                  </div>
+                  <div class="form-full">
+                    <label for="formService" class="form-label">Service of Interest</label>
+                    <select id="formService" name="service" class="form-select">
+                      <option value="Full foundation package">Full business foundation (All services)</option>
+                      <option value="HR solutions">HR solutions & Payroll</option>
+                      <option value="AI integrations">AI integrations</option>
+                      <option value="Software development">Software development (CRM / HRMS / Billing)</option>
+                      <option value="Digital marketing">Digital marketing & Ads</option>
+                      <option value="Cyber security">Cyber security</option>
+                    </select>
+                  </div>
+                  <div class="form-full">
+                    <label for="formMessage" class="form-label">Project Details & Requirements</label>
+                    <textarea id="formMessage" name="message" class="form-textarea" placeholder="Describe your operational goals, current challenges, and timeline..." required></textarea>
+                  </div>
+                </div>
+
+                <div class="form-submit-row">
+                  <button type="submit" class="btn btn-white" style="font-size: 0.875rem; padding: 0.75rem 1.75rem;">
+                    Send Consultation Request →
+                  </button>
+                </div>
+                <div id="formStatus" style="display:none; margin-top: 1rem; font-size: 0.9375rem; color: #a1a1aa; text-align: center;"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========================================================================
+         9. FOOTER
+         Logo, quick links, contact details, copyright
+         ========================================================================== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-top">
+          <!-- Logo & Brand Statement -->
+          <div class="footer-brand">
+            <a href="#top" aria-label="isdone Business Solutions - Back to Top">
+              <img src="/assets/aistudio/isdone-logo-recreated_bbe8a523.svg" alt="isdone Business Solutions" class="footer-logo" width="160" height="59" onerror="this.onerror=null; this.src='logo.svg';" />
+            </a>
+            <p class="footer-tagline">"The foundation of your success"</p>
+            <p class="footer-subline">We help your business reach the next level.</p>
+          </div>
+
+          <!-- Quick Navigation Links -->
+          <div>
+            <h4 class="footer-heading">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="#about" class="footer-link">About Us</a></li>
+              <li><a href="#services" class="footer-link">Solutions</a></li>
+              <li><a href="#how-we-work" class="footer-link">How we work</a></li>
+              <li><a href="#why-isdone" class="footer-link">Why isdone</a></li>
+              <li><a href="#estimator" class="footer-link">Scope Estimator</a></li>
+              <li><a href="#faq" class="footer-link">FAQ</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Details -->
+          <div>
+            <h4 class="footer-heading">Direct Contacts</h4>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-item">
+                <span class="contact-item-label">Direct Email</span>
+                <a href="mailto:info@isdone.com" class="contact-item-value">info@isdone.com</a>
+              </li>
+              <li class="footer-contact-item">
+                <span class="contact-item-label">Direct Phone Line</span>
+                <a href="tel:9048525690" class="contact-item-value">9048525690</a>
+              </li>
+              <li class="footer-contact-item">
+                <span class="contact-item-label">Operational Desk</span>
+                <span style="font-size: 0.9375rem; color: #a1a1aa;">Mon – Fri: 9:00 AM – 6:00 PM IST</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright Row -->
+        <div class="footer-bottom">
+          <p class="copyright-text">© 2026 isdone Business Solutions. All rights reserved.</p>
+          <div class="footer-sublinks">
+            <a href="#about">About Our Model</a>
+            <a href="#services">Our Capabilities</a>
+            <a href="#contact">Consult with Us</a>
+            <a href="#top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Back to top ↑</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==========================================================================
+         LIGHTWEIGHT ACCESSIBLE JAVASCRIPT
+         Handles: Theme toggle, Mobile drawer, Form handler, Scope Estimator
+         ========================================================================== -->
+    <script>
+      // 1. Mobile Menu Drawer Toggle
+      const mobileNavToggle = document.getElementById('mobileNavToggle');
+      const mobileDrawer = document.getElementById('mobileDrawer');
+
+      function toggleMobileMenu() {
+        const isOpen = mobileDrawer.classList.contains('is-open');
+        if (isOpen) {
+          closeMobileMenu();
+        } else {
+          mobileDrawer.classList.add('is-open');
+          mobileNavToggle.setAttribute('aria-expanded', 'true');
+          mobileDrawer.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+        }
+      }
+
+      function closeMobileMenu() {
+        mobileDrawer.classList.remove('is-open');
+        mobileNavToggle.setAttribute('aria-expanded', 'false');
+        mobileDrawer.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      mobileNavToggle.addEventListener('click', toggleMobileMenu);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && mobileDrawer.classList.contains('is-open')) {
+          closeMobileMenu();
+        }
+      });
+
+      // 2. Theme Toggle (Light / Dark)
+      const themeToggleBtn = document.getElementById('themeToggleBtn');
+      const themeToggleLabel = document.getElementById('themeToggleLabel');
+
+      function getInitialTheme() {
+        const saved = localStorage.getItem('isdone_theme');
+        if (saved) return saved;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+
+      function applyTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('isdone_theme', theme);
+        if (themeToggleLabel) {
+          themeToggleLabel.textContent = theme === 'dark' ? 'Dark' : 'Light';
+        }
+      }
+
+      applyTheme(getInitialTheme());
+
+      themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        applyTheme(nextTheme);
+      });
+
+      // 3. Quick Prefill Service Helper
+      function prefillService(serviceName) {
+        const select = document.getElementById('formService');
+        if (select) {
+          select.value = serviceName;
+        }
+      }
+
+      // 4. Strategic Scope Estimator Logic
+      let currentStage = 'Emerging Startup (1-15 Team)';
+
+      function setBusinessStage(stage, btn) {
+        currentStage = stage;
+        document.querySelectorAll('.stage-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        updateEstimatorSummary();
+      }
+
+      function updateEstimatorSummary() {
+        const countSpan = document.getElementById('summarySelectedCount');
+        const descSpan = document.getElementById('estimatorPhaseDesc');
+        
+        let count = 0;
+        const selected = [];
+        if (document.getElementById('chkHR').checked) { count++; selected.push('HR & Payroll'); }
+        if (document.getElementById('chkSoftware').checked) { count++; selected.push('Software'); }
+        if (document.getElementById('chkAI').checked) { count++; selected.push('AI'); }
+        if (document.getElementById('chkMarketing').checked) { count++; selected.push('Marketing'); }
+        if (document.getElementById('chkSecurity').checked) { count++; selected.push('Cyber Security'); }
+
+        countSpan.textContent = `${count} ${count === 1 ? 'Domain' : 'Domains'}`;
+        descSpan.textContent = `${currentStage} roadmap integrating: ${selected.join(', ') || 'Custom assessment'}.`;
+      }
+
+      function transferEstimateToContact() {
+        const selected = [];
+        if (document.getElementById('chkHR').checked) selected.push('HR & Payroll');
+        if (document.getElementById('chkSoftware').checked) selected.push('Software');
+        if (document.getElementById('chkAI').checked) selected.push('AI');
+        if (document.getElementById('chkMarketing').checked) selected.push('Marketing');
+        if (document.getElementById('chkSecurity').checked) selected.push('Cyber Security');
+
+        const messageField = document.getElementById('formMessage');
+        const selectField = document.getElementById('formService');
+
+        if (selectField) {
+          selectField.value = selected.length > 2 ? 'Full foundation package' : (selected[0] ? (selected[0] === 'HR & Payroll' ? 'HR solutions' : selected[0]) : 'Full foundation package');
+        }
+
+        if (messageField) {
+          messageField.value = `Business Phase: ${currentStage}\nRequested Domains: ${selected.join(', ')}\n\nPlease provide an introductory scope, timeline, and proposal.`;
+        }
+
+        const contactSec = document.getElementById('contact');
+        if (contactSec) {
+          contactSec.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+
+      // 5. Quick Message Form Handler
+      function handleInquirySubmit(event) {
+        event.preventDefault();
+        const name = document.getElementById('formName').value;
+        const email = document.getElementById('formEmail').value;
+        const service = document.getElementById('formService').value;
+        const message = document.getElementById('formMessage').value;
+
+        const mailtoSubject = encodeURIComponent(`Consultation Request from ${name} - ${service}`);
+        const mailtoBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nSelected Service: ${service}\n\nProject Requirements:\n${message}\n\nSent via isdone.com`);
+        
+        const mailtoUrl = `mailto:info@isdone.com?subject=${mailtoSubject}&body=${mailtoBody}`;
+        
+        const statusBox = document.getElementById('formStatus');
+        statusBox.style.display = 'block';
+        statusBox.textContent = 'Opening your email client with your prefilled consultation request...';
+        
+        window.location.href = mailtoUrl;
+
+        setTimeout(() => {
+          statusBox.textContent = 'Thank you! If your email client did not open automatically, please reach us directly at info@isdone.com or call 9048525690.';
+        }, 1200);
+      }
+    </script>
+  </body>
+</html>
